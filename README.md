@@ -5,6 +5,19 @@
  
  Authors: Talaa Zina 
 
+# Tools :
+
+    Node.js
+    React
+    React-DOM
+    React-Create-App
+    Redux
+    npm
+    CSS
+    ES6
+
+
+
 
 # Clone project
    git clone git@github.com:zinagithub/bookstore.git
