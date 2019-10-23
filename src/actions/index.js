@@ -1,12 +1,19 @@
  export const REMOVE_BOOK = 'REMOVE_BOOK'
  export const CREATE_BOOK = 'CREATE_BOOK'
 
-export const createBook = (book) => ({
-  type: CREATE_BOOK,
-  book
-})
 
-export const removeBook = (book) => ({
+const generateId = () => Math.round(Math.random() * 1000);
+
+export const createBook = ({ title, category }) => ({
+  type: CREATE_BOOK,
+  book: {
+    id: generateId(),
+    title,
+    category
+  }
+});
+
+export const removeBook = id => ({
   type: REMOVE_BOOK,
-  book
-})
+  id
+});
