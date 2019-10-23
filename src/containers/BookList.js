@@ -14,8 +14,8 @@ class BookList extends React.Component {
                   <th>TITLE</th>
                   <th>CATEGORY</th>
                 </tr>
-    	       {this.props.mybooks.map((elm, index) => {
-    	       	 return (<Book key = {index} value = {elm} />)
+    	       {this.props.mybooks.map((elm) => {
+    	       	 return (<Book key = {elm.id} value = {elm} />)
     	       })}
                </tbody>
     	   </table>);
