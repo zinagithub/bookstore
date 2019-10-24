@@ -28,7 +28,7 @@ class BookList extends React.Component {
 
 const mapStateToProps = state => {
   return {
-  	mybooks: state.books
+  	mybooks: state
   }	
 }
 

@@ -1,6 +1,6 @@
 import {CREATE_BOOK, REMOVE_BOOK } from '../actions/index'
 const initState = {
-	books : [
+books : [
 	{
 		id : '1',
 		title : 'book1',
@@ -13,15 +13,16 @@ const initState = {
 	},
 	]
 }
-const booksReducer = (state = initState, action)  => {
+const booksReducer = (state = initState.books, action)  => {
     switch (action.type) {
     case CREATE_BOOK:
-        state.books = [...state.books, action.book]
-        return state;
+        //state.books = [...state.books, action.book]
+        //console.log('books :',state.books)
+        return [...state, action.book];
        
     case REMOVE_BOOK:
-        state.books = state.books.filter(book => book.id !== action.id);
-        return state;
+        //state.books = state.books.filter(book => book.id !== action.id);
+        return state.filter(book => book.id !== action.id);
     default:
       return state
   }
