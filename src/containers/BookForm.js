@@ -18,6 +18,7 @@ class BookForm extends React.Component {
 		e.preventDefault();
 		const { title, category } = this.state;
 		this.props.addItem({ title, category });
+		e.target.reset()
 		this.setState({
                 title: '',
         })  
@@ -26,7 +27,8 @@ class BookForm extends React.Component {
 		return (
             <form onSubmit={this.handleSubmit}>
                   
-                  <input type = 'text' name='title'  placeholder="Enter the Book name" onChange={this.handleChange}/>
+                  <input type = 'text' name='title'  placeholder="Enter the Book name" 
+                  value = {this.state.title} onChange={this.handleChange}/>
                   <select name='category' onChange={this.handleChange}>
                     { Categories.map((cat) => (<option  value={cat} key={cat} > {cat} </option>)) }
                   </select>
