@@ -1,12 +1,12 @@
 import React from 'react';
 import Book from '../components/Book';
 import { connect } from 'react-redux';
+import {removeBook} from '../actions/index';
 import '../components/App.css';
 
 class BookList extends React.Component {
 	
   render (){
-  	
     return (<table>
     	       <tbody>
     	       <tr>
@@ -15,7 +15,8 @@ class BookList extends React.Component {
                   <th>CATEGORY</th>
                 </tr>
     	       {this.props.mybooks.map((elm) => {
-    	       	 return (<Book key = {elm.id} value = {elm} />)
+    	       	 return (<Book key = {elm.id} value = {elm} 
+    	       	 	      handleRemoveBook = {this.props.delItem} />)
     	       })}
                </tbody>
     	   </table>);
@@ -25,7 +26,15 @@ class BookList extends React.Component {
 
 const mapStateToProps = state => {
   return {
-  	mybooks: state.books
+  	mybooks: state
   }	
 }
-export default connect(mapStateToProps)(BookList)
+
+const mapDispatchToProps = dispatch => {
+  return {
+    delItem: (id) => {
+      dispatch(removeBook(id))
+    }
+  };
+};
+export default connect(mapStateToProps, mapDispatchToProps)(BookList)

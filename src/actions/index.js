@@ -2,7 +2,7 @@
  export const CREATE_BOOK = 'CREATE_BOOK'
 
 
-const generateId = () => Math.round(Math.random() * 1000);
+const generateId = () => Math.round(Math.random() * 1000).toString();
 
 export const createBook = ({ title, category }) => ({
   type: CREATE_BOOK,
