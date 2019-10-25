@@ -7,8 +7,6 @@ import '../components/App.css';
 class BookList extends React.Component {
 	
   render (){
-  	console.log('mybooks :', this.props.mybooks);
-  	console.log('delItem :', this.props.delItem)
     return (<table>
     	       <tbody>
     	       <tr>
