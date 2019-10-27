@@ -3,6 +3,8 @@ import { connect } from 'react-redux';
 import {createBook} from '../actions/index';
 import {Categories} from '../constants/constants';
 
+
+
 class BookForm extends React.Component {
 	state = {
 		title : '',
@@ -29,7 +31,7 @@ class BookForm extends React.Component {
             <form onSubmit={this.handleSubmit}>
                   
                   <input type = 'text' name='title'  placeholder="Enter the Book name" 
-                  value = {this.state.title} onChange={this.handleChange}/>
+                  value = {this.state.title} required onChange={this.handleChange} />
                   <select name='category' onChange={this.handleChange}>
                     { Categories.map((cat) => (<option  value={cat} key={cat} > {cat} </option>)) }
                   </select>
@@ -38,6 +40,7 @@ class BookForm extends React.Component {
 			);
 	}
 }
+
 
 const mapStateToProps = (state) => {
   return {
