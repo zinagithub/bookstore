@@ -2,7 +2,7 @@
 .panel-bg {
   background-color: #fafafa;
   border-radius: 4px;
-  box-shadow: 0 0 60px 0 var(--black-5);
+  box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.05);
   height: 1097px;
   margin : 0 auto;
   width: 1400px;
@@ -16,8 +16,11 @@ table {
   background-color: #ffffff;
   border: solid 1px #e8e8e8;
   border-radius: 4px;
+  
+}
+.row-Panel {
   height: 170px;
-  width: 1200px;
+  width: 1200px;	
 }
 .headerBookStore{
   background-color: #ffffff;
@@ -74,11 +77,13 @@ table {
 .progress{
   border: 5px solid #307bbe;
   border-left-color: #e8e8e8;
-  border-radius: 50%;
-  height: 50px;
-  text-align: center;
-  width: 50px;
+  border-radius: 50%; 
+  text-align: center; 
 }
+.progress {
+  height: 50px;	
+  width: 50px;
+} 
 .progress p {
 	padding-left : 10px;
 	text-align :center;
@@ -88,14 +93,16 @@ button {
   border-radius: 3px;
   color: #ffffff;
   font-family: RobotoSlab;
-  font-stretch: normal;
   font-size: 13px;
+  font-stretch: normal; 
   font-style: normal;
   font-weight: 300;
-  height: 33px;
   letter-spacing: 0.5px;
   line-height: normal;
-  text-align: center;
+  text-align: center; 
+}
+button {
+  height: 33px;	
   width: 184px;
 }
 form { 
@@ -127,8 +134,8 @@ form button {
 .formBook p {	  
   color: #888888;
   font-family: Montserrat;
-  font-stretch: normal;
   font-size: 20px;
+  font-stretch: normal;
   font-style: normal;
   font-weight: bold;
   letter-spacing: -0.18px;
