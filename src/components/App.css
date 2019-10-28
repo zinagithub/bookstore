@@ -34,11 +34,13 @@ table {
   font-size: 30px;
   font-stretch: normal;
   font-style: normal;
-  font-weight: bold;
-  height: 37px;
+  font-weight: bold; 
   letter-spacing: normal;
   line-height: normal;
-  padding-top: 21px;
+  padding-top: 21px; 
+}
+.title{
+  height: 37px;	
   width: 300px;
 }
 .Category{
@@ -50,11 +52,13 @@ table {
   font-weight: normal;
   letter-spacing: 1.9px;
   line-height: normal;
-  height: 16px;
   opacity: 0.5;
-  padding-top: 31px;
-  width: 105px;
+  padding-top: 31px; 
 }	
+.Category {
+  height: 16px;	
+  width: 105px;
+}
 .books{
   color: #121212;	  
   font-family: Montserrat;
