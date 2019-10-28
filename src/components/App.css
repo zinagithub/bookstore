@@ -48,8 +48,8 @@ table {
   font-stretch: normal;
   font-style: normal;
   font-weight: normal;
-  line-height: normal;
   letter-spacing: 1.9px;
+  line-height: normal;
   height: 16px;
   opacity: 0.5;
   padding-top: 31px;
@@ -62,10 +62,13 @@ table {
   font-stretch: normal;
   font-style: normal;
   font-weight: normal;
-  height: 16px;
   letter-spacing: 1.9px;
   line-height: normal;
   padding: 31px 40px;
+  
+}
+.books {
+  height: 16px;
   width: 65px;
 }
 
@@ -112,18 +115,22 @@ form input {
  background-color: #ffffff;
  border: solid 1px #e8e8e8;	
  border-radius: 4px;
- height: 45px;
  margin-right : 10px;
+}
+form input {
+ height: 45px;	
  width: 585px;
 }
 form select{
  background-color: #ffffff;	
  border: solid 1px #e8e8e8;
  border-radius: 4px;
- height: 45px;
  margin-right : 10px;
- width: 280px;
 } 
+form select {
+ height: 45px;	
+ width: 280px;
+}
 form button {
  background-color: #0290ff;	
  border-radius: 3px;
