@@ -2,6 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import {createBook} from '../actions/index';
 import {Categories} from '../constants/constants';
+import '../components/App.css';
 
 
 
@@ -28,7 +29,9 @@ class BookForm extends React.Component {
 	}
 	render(){
 		return (
-            <form onSubmit={this.handleSubmit}>
+            <div className = 'formBook'>
+              <p>ADD NEW BOOK</p>
+              <form onSubmit={this.handleSubmit}>
                   
                   <input type = 'text' name='title'  placeholder="Enter the Book name" 
                   value = {this.state.title} required onChange={this.handleChange} />
@@ -36,7 +39,9 @@ class BookForm extends React.Component {
                     { Categories.map((cat) => (<option  value={cat} key={cat} > {cat} </option>)) }
                   </select>
                   <button>ADD BOOK</button>
-            </form>
+              </form>
+            </div>
+            
 			);
 	}
 }

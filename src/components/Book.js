@@ -1,5 +1,5 @@
 import React from 'react';
-
+import './App.css';
 
 class Book extends React.Component {
 
@@ -9,11 +9,12 @@ class Book extends React.Component {
     let myCategory= this.props.value.category;
     let clickHandler = this.props.handleRemoveBook;
     return ( 
-            <tr>
+            <tr className = "row-Panel">
               <td>{myId}</td>  
               <td>{myTitle}</td>
               <td>{myCategory}</td>
-              <td><button onClick={() => clickHandler(myId)}>delete</button></td>
+              <td><div className = 'progress'><p>60%</p></div></td>
+              <td><button onClick={() => clickHandler(myId)}>DELETE</button></td>
             </tr>           	
             
     );
