@@ -26,9 +26,9 @@ table tr td {
 }
 .headerBookStore{
   background-color: #ffffff;
-  display : flex;	
-  padding-left: 50px;
-  padding-bottom: 50px
+  display : flex;
+  padding-bottom: 50px;	
+  padding-left: 50px; 
 }
 .title {
   color: #0290ff; 
@@ -139,10 +139,12 @@ form button {
   font-size: 20px;
   font-stretch: normal;
   font-style: normal;
-  font-weight: bold;
-  height: 24px;
+  font-weight: bold; 
   letter-spacing: -0.18px;
   line-height: normal;
-  padding: 50px;
+  padding: 50px; 
+}
+.formBook p {
+  height: 24px;	
   width: 290px;
 }
