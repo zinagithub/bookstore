@@ -14,7 +14,7 @@ class Book extends React.Component {
               <td>{myTitle}</td>
               <td>{myCategory}</td>
               <td><div className = 'progress'><p>60%</p></div></td>
-              <td><button onClick={() => clickHandler(myId)}>DELETE</button></td>
+              <td><button onClick={() => clickHandler(myId)} className = 'btn btn-primary'>DELETE</button></td>
             </tr>           	
             
     );

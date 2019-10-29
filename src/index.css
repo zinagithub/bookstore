@@ -7,7 +7,7 @@ body {
   -moz-osx-font-smoothing: grayscale;	
   height: 1434px;
   margin: 0;
-  width: 1600px;
+  /*width: auto;*/
 }
 
 code {

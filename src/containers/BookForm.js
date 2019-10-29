@@ -38,7 +38,7 @@ class BookForm extends React.Component {
                   <select name='category' onChange={this.handleChange}>
                     { Categories.map((cat) => (<option  value={cat} key={cat} > {cat} </option>)) }
                   </select>
-                  <button>ADD BOOK</button>
+                  <button className = 'btn btn-primary'>ADD BOOK</button>
               </form>
             </div>
             

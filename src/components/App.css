@@ -1,11 +1,9 @@
-
 .panel-bg {
   background-color: #fafafa;
   border-radius: 4px;
   box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.05);
   height: 1097px;
-  margin : 0 auto;
-  width: 1400px;
+  width: 100%;
 }
 
 table {
@@ -18,15 +16,19 @@ table {
   border-radius: 4px;
   
 }
+table tr td {
+  padding-left: 50px;
+}
+
 .row-Panel {
-  height: 170px;
-  width: 1200px;	
+  height: 120px;
+  margin-top: 20px;
 }
 .headerBookStore{
   background-color: #ffffff;
   display : flex;	
-  height: 95px;
-  width: 1099px;
+  padding-left: 50px;
+  padding-bottom: 50px
 }
 .title {
   color: #0290ff; 
@@ -41,7 +43,7 @@ table {
 }
 .title{
   height: 37px;	
-  width: 300px;
+  width: 263px;
 }
 .Category{
   color: #121212;	
@@ -73,12 +75,13 @@ table {
 }
 .books {
   height: 16px;
-  width: 65px;
+  width: 105px;
 }
 
 .categFilter{
-  margin : 0 auto;
-  width : 50%;
+  position: absolute;
+  right: 8%;
+  top: 25px;
 }
 
 .progress{
@@ -92,22 +95,11 @@ table {
   width: 50px;
 } 
 .progress p {
-	padding-left : 10px;
+	padding-left : 7px;
+	padding-top: 7px;
 	text-align :center;
 }
-button {
-  background-color: #0290ff;
-  border-radius: 3px;
-  color: #ffffff;
-  font-family: RobotoSlab;
-  font-size: 13px;
-  font-stretch: normal; 
-  font-style: normal;
-  font-weight: 300;
-  letter-spacing: 0.5px;
-  line-height: normal;
-  text-align: center; 
-}
+
 button {
   height: 33px;	
   width: 184px;
@@ -119,11 +111,12 @@ form input {
  background-color: #ffffff;
  border: solid 1px #e8e8e8;	
  border-radius: 4px;
+ margin-left : 50px;
  margin-right : 10px;
 }
 form input {
  height: 45px;	
- width: 585px;
+ width: 500px;
 }
 form select{
  background-color: #ffffff;	
@@ -133,14 +126,12 @@ form select{
 } 
 form select {
  height: 45px;	
- width: 280px;
+ width: 250px;
 }
 form button {
- background-color: #0290ff;	
- border-radius: 3px;
  height: 45px;
  margin-right : 10px;
- width: 180px;
+ width: 150px;
 }
 .formBook p {	  
   color: #888888;
@@ -152,5 +143,6 @@ form button {
   height: 24px;
   letter-spacing: -0.18px;
   line-height: normal;
-  width: 190px;
+  padding: 50px;
+  width: 290px;
 }
