@@ -18,17 +18,12 @@ class BookList extends React.Component {
     	    <CategoryFilter filterProp = {this.props.selectFilter} />
 	    	<table>
 	    	       <tbody>
-	    	       <tr>
-	                  <th>ID</th>
-	                  <th>TITLE</th>
-	                  <th>CATEGORY</th>
-	                </tr>
 	    	       {
 	    	       	arrBook.map((elm) => {
 	    	       	 return (<Book key = {elm.id} value = {elm} 
 	    	       	 	      handleRemoveBook = {this.props.delItem} />)
 	    	       })}
-	               </tbody>
+	             </tbody>
 	    	</table>
     	</div>   );
   }
