@@ -6,7 +6,6 @@ import './App.css';
 
 function App() {
   return (
-    //<div className='panel-bg'>
     <div className='panel-bg'>
       <Header />
       <BookList />
