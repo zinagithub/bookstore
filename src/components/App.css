@@ -1,0 +1,150 @@
+.panel-bg {
+  background-color: #fafafa;
+  border-radius: 4px;
+  box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.05);
+  height: 1097px;
+  width: 100%;
+}
+
+table {
+  width:100%;
+}
+
+.row-Panel {
+  background-color: #ffffff;
+  border: solid 1px #e8e8e8;
+  border-radius: 4px;
+  
+}
+table tr td {
+  padding-left: 50px;
+}
+
+.row-Panel {
+  height: 120px;
+  margin-top: 20px;
+}
+.headerBookStore{
+  background-color: #ffffff;
+  display : flex;
+  padding-bottom: 50px;	
+  padding-left: 50px; 
+}
+.title {
+  color: #0290ff; 
+  font-family: Montserrat;
+  font-size: 30px;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: bold; 
+  letter-spacing: normal;
+  line-height: normal;
+  padding-top: 21px; 
+}
+.title{
+  height: 37px;	
+  width: 263px;
+}
+.Category{
+  color: #121212;	
+  font-family: Montserrat;
+  font-size: 13px;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: 1.9px;
+  line-height: normal;
+  opacity: 0.5;
+  padding-top: 31px; 
+}	
+.Category {
+  height: 16px;	
+  width: 105px;
+}
+.books{
+  color: #121212;	  
+  font-family: Montserrat;
+  font-size: 13px;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: 1.9px;
+  line-height: normal;
+  padding: 31px 40px;
+  
+}
+.books {
+  height: 16px;
+  width: 105px;
+}
+
+.categFilter{
+  position: absolute;
+  right: 8%;
+  top: 25px;
+}
+
+.progress{
+  border: 5px solid #307bbe;
+  border-left-color: #e8e8e8;
+  border-radius: 50%; 
+  text-align: center; 
+}
+.progress {
+  height: 50px;	
+  width: 50px;
+} 
+.progress p {
+	padding-left : 7px;
+	padding-top: 7px;
+	text-align :center;
+}
+
+button {
+  height: 33px;	
+  width: 184px;
+}
+form { 
+  display: flex;
+}
+form input {
+ background-color: #ffffff;
+ border: solid 1px #e8e8e8;	
+ border-radius: 4px;
+ margin-left : 50px;
+ margin-right : 10px;
+}
+form input {
+ height: 45px;	
+ width: 500px;
+}
+form select{
+ background-color: #ffffff;	
+ border: solid 1px #e8e8e8;
+ border-radius: 4px;
+ margin-right : 10px;
+} 
+form select {
+ height: 45px;	
+ width: 250px;
+}
+form button {
+ height: 45px;
+ margin-right : 10px;
+ width: 150px;
+}
+.formBook p {	  
+  color: #888888;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: bold; 
+  letter-spacing: -0.18px;
+  line-height: normal;
+  padding: 50px; 
+}
+.formBook p {
+  height: 24px;	
+  width: 290px;
+}
