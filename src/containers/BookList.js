@@ -16,7 +16,7 @@ class BookList extends React.Component {
     return (
     	<div>
     	    <CategoryFilter filterProp = {this.props.selectFilter} />
-	    	<table>
+	    	<table className = "table table-responsive table-bordered table-condensed text-center">
 	    	       <tbody>
 	    	       {
 	    	       	arrBook.map((elm) => {

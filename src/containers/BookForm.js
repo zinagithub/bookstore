@@ -29,16 +29,16 @@ class BookForm extends React.Component {
 	}
 	render(){
 		return (
-            <div className = 'formBook'>
+            <div className = 'formBook '>
               <p>ADD NEW BOOK</p>
-              <form onSubmit={this.handleSubmit}>
+              <form onSubmit={this.handleSubmit} className = "row">
                   
                   <input type = 'text' name='title'  placeholder="Enter the Book name" 
-                  value = {this.state.title} required onChange={this.handleChange} />
-                  <select name='category' onChange={this.handleChange}>
+                  value = {this.state.title} required onChange={this.handleChange} className="col-xs-12 col-sm-5" />
+                  <select name='category' onChange={this.handleChange} className="col-xs-12 col-sm-5">
                     { Categories.map((cat) => (<option  value={cat} key={cat} > {cat} </option>)) }
                   </select>
-                  <button className = 'btn btn-primary'>ADD BOOK</button>
+                  <button className = 'btn btn-primary col-xs-12 col-sm-2'>ADD BOOK</button>
               </form>
             </div>
             
