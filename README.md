@@ -4,6 +4,8 @@
  Assignment:https://github.com/microverseinc/project-redux-bookstore/blob/master/README.md
  
  Authors: Talaa Zina 
+ 
+ Live version : https://zinagithub.github.io/bookstore/
 
 # Tools :
 
