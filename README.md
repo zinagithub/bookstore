@@ -1,5 +1,5 @@
 # bookstore
- In this project I will use React and Redux to build a very simple application
+ Build a simple bookstore management tool with React and Redux.
  
  Assignment:https://github.com/microverseinc/project-redux-bookstore/blob/master/README.md
  
