@@ -7,6 +7,11 @@
  Authors: Talaa Zina 
  
  Live version : https://zinagithub.github.io/bookstore/
+ 
+ ## Screenshot
+
+![screenshot](https://github.com/zinagithub/zinatalaa.codes/blob/master/src/components/img/bookstore.png)
+
 
 # Tools :
 
