@@ -1,5 +1,6 @@
 # bookstore
- Build a simple bookstore management tool with React and Redux.
+ Build a simple bookstore management tool with React and Redux, that allows users to keep track of their reading progress and sort their online libraries by genre and author.
+
  
  Assignment:https://github.com/microverseinc/project-redux-bookstore/blob/master/README.md
  
